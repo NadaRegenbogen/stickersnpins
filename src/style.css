@@ -1,0 +1,197 @@
+/*General*/
+
+@font-face {
+    font-family: SandwichMarkerPro-Bold;
+    src: url(/src/SandwichMarkerPro-Bold.ttf);
+}
+
+
+*{
+    box-sizing: border-box;
+    font-family: 'SandwichMarkerPro-Bold', 'sans-serif';
+    margin: 0;
+    }
+
+
+img {max-width: 250px;}
+
+header {background-color: rgb(221, 133, 245) ;}
+
+.NavDiv {position: sticky; top: 0; left: 0;
+         background-color:  rgb(181, 38, 220);}
+
+.NavDiv a{
+        text-decoration: none;
+        padding-left: 0.5rem;
+        
+    }
+.NavDiv img {max-width: 20px;}
+
+.ShopHeader{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+@media screen and (max-width: 768px){
+   .ShopSubtitle {
+    padding-left: 2rem;
+    text-align: center;
+   }
+}
+
+.ShopLogo{
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+
+.ShopTitle{
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.ShopSubtitle{
+font-size: 2rem;
+overflow-wrap: break-word;
+color: rgb(0, 255, 0);
+padding-right: 1rem;
+}
+@media screen and (max-width: 480px) {
+    .ShopSubtitle{display: none;}
+}
+
+footer{
+    background-color: rgb(181, 38, 220);
+    color: rgb(0, 255, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin-top: 10rem;
+}
+
+/*About Page*/
+
+.AboutUs{ 
+overflow-wrap: break-word;
+padding: 1rem;
+color: rgb(181, 38, 220);
+} & h1{text-align: center;
+padding-bottom: 2rem;}
+
+/*Products Page*/
+
+.ProductList{
+   
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 2rem;
+    border: solid 0.05rem rgb(181, 38, 220);
+    background-color:rgb(226, 156, 245) ;
+    padding-top: 2rem;
+    padding-left: 4rem;
+    padding-bottom: 2rem;
+} & button{background-color: rgb(0, 255, 0);
+           color :rgb(181, 38, 220);;
+           border: 0.05rem solid rgb(181, 38, 220);
+           border-radius: 10px;
+}
+
+@media screen and (max-width: 768px){
+    .ProductList{grid-template-columns: 1fr 1fr;}}
+
+@media screen and (max-width: 480px){
+    .ProductList{grid-template-columns: 1fr;}}
+
+.ProductLink{
+    text-decoration: none;
+    color: rgb(181, 38, 220);
+}
+
+.ProductDetContainer{color: rgb(181, 38, 220);
+                     padding-left: 1rem;}
+
+.ProductContainer{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 2rem;
+}
+
+.Description{
+    padding-bottom: 0.5rem;
+    color: rgb(181, 38, 220);
+}
+
+.CategoryFilter{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    padding-bottom: 2rem;
+    padding-top: 0.5rem;
+    color: rgb(181, 38, 220);
+} & h1 {color: rgb(181, 38, 220);
+} & select {color: rgb(181, 38, 220);
+            background-color:  rgb(0, 255, 0);}
+
+/*Cart Page*/
+
+.CartPage{
+   text-align: center;
+   overflow-wrap: break-word;
+}
+.CartText{
+    color:  rgb(0, 255, 0);
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.CartTextt{padding-top: 10rem;}
+
+.Total{color: rgb(181, 38, 220);}
+
+/*Contact Page*/
+
+.ContactFormDiv{
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+}
+ 
+.ContactForm{
+    display: flex;
+    flex-direction: column;
+    color: rgb(181, 38, 220);;
+}
+label{padding-left: 0.5rem;}
+
+/*Video Page*/
+
+.VideosDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+} 
+.VidName {margin-top: 2rem;
+       color: rgb(181, 38, 220);} & h1 {margin-top: 2rem;}
+
+.VideoTag{
+    max-width: 100%;
+    border: solid 0.5rem rgb(0, 255, 0);
+} 
+@media screen and (max-width: 480px){
+    .VideoTag {width: 300px;}
+}
+.SubName{
+    color: rgb(181, 38, 220);;
+    padding: 1rem;
+}
+@media screen and (max-width: 480px) {
+    .SubName {padding-left: 2rem;}
+}
+
+
+
